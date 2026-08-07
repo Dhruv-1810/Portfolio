@@ -9,14 +9,883 @@
         <link rel="stylesheet" href="css/media.css" />
         <link rel="stylesheet" href="css/animation.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
+        <!-- Navbar  -->
+        <header>
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container">
+
+                    <!-- Logo -->
+                    <a class="navbar-brand logo active" href="#home">
+                        <div>
+                            <h1>Dhruv<span>.</span></h1>
+                            <p>Frontend Developer</p>
+                        </div>
+                    </a>
+
+                    <!-- Mobile Navbar Button -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" data-bs-theme="dark">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <!-- Navbar Links -->
+                     <div class="collapse navbar-collapse" id="navbarMenu">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#home">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#skills">Skill</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#projects">Project</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact Me</a>
+                            </li>
+                        </ul>
+
+                        <!-- Talk Me Button -->
+                        <a href="#contact" class="btn talk-btn">
+                            Let's Talk <i class="fa-solid fa-comment talk-i"></i>
+                        </a>
+                     </div>
+
+                </div>
+            </nav>
+        </header>
+
+        <!-- hero-section -->
+        <section id="home" class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 order-2 order-lg-1 left">
+                        <p class="greeting"><span>👋</span>HELLO, I'M</p>
+                        <h1 class="hero-name">Dhruv <span class="hero-last-name">Danani</span></h1>
+                        <h2 class="hero-work"><span id="role">Frontend Web Developer</span> | Building Modern & Responsive Web Experiences</h2>
+                        <p class="info">I am a passionate Frontend Developer and BCA 2nd year student who loves turning ideas into real, interactive and user-friendly web applications.</p>
+
+                        <div class="hero-buttons">
+                            <a href="#projects" class="work-btn">View My Work <i class="fa-solid fa-arrow-right work-i"></i></a>
+                            <a href="images/cv.png" target="_blank" class="cv-btn">Download CV <i class="fa-solid fa-download cv-i"></i></a>
+                        </div>
+
+                        <div class="social-icon">
+                            <a href="https://github.com/Dhruv-1810" id="social-link">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/dhruv-danani/" id="social-link">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+
+                            <a href="#" id="social-link">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                            <a href="#" id="social-link">
+                                <i class="fa-regular fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 order-1 order-lg-2 right">
+                        <div class="hero-right">
+
+                            <!-- Background Glow -->
+                            <div class="hero-glow"></div>
+
+                            <!-- Profile Image -->
+                            <div class="profile-card">
+                                <div class="hero-image">
+                                    <img src="images/Dhruv.png" alt="Dhruv Danani">
+                                </div>
+
+                                <!-- Code Card  -->
+                                <div class="code-card">
+
+                                    <div class="code-header">
+                                        <i class="fa-solid fa-code"></i>
+                                    </div>
+
+                                    <div class="code-content">
+
+                                        <div class="code-line">
+                                            <span class="keyword">const</span>
+                                            developer = {
+                                        </div>
+
+                                        <div class="code-line indent">
+                                            <span class="property">name</span>:
+                                            <span class="string">"Dhruv Danani"</span>,
+                                        </div>
+
+                                        <div class="code-line indent">
+                                            <span class="property">role</span>:
+                                            <span class="string">"Frontend Developer"</span>,
+                                        </div>
+
+                                        <div class="code-line indent">
+                                            <span class="property">skills</span>:
+                                            [
+                                        </div>
+
+                                        <div class="code-line indent2">
+                                            <span class="string">"HTML"</span>,
+                                            <span class="string">"CSS"</span>,
+                                            <span class="string">"JavaScript"</span>,
+                                        </div>
+
+                                        <div class="code-line indent2">
+                                            <span class="string">"Bootstrap"</span>,
+                                            <span class="string">"Django"</span>
+                                        </div>
+
+                                        <div class="code-line indent">
+                                            ],
+                                        </div>
+
+                                        <div class="code-line indent">
+                                            <span class="property">passion</span>:
+                                            <span class="string">"Building amazing web experiences"</span>
+                                        </div>
+
+                                        <div class="code-line">
+                                            };
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+    <!-- Features -->
+
+        <section class="features">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Card 1 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+
+                        <div class="feature-card from-left delay-1">
+
+                            <div class="feature-header">
+                                <i class="bi bi-rocket-takeoff-fill"></i>
+                                <h3>Modern UI/UX</h3>
+                            </div>
+                            <p>
+                                Creating clean, attractive and user-friendly interfaces that deliver an excellent user experience.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="feature-card from-left delay-2">
+                            <div class="feature-header">
+                                <i class="fa-solid fa-code"></i>
+                                <h3>Responsive Design</h3>
+                            </div>
+                            <p>
+                                Building fully responsive websites that work perfectly on desktop, tablet and mobile devices.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+
+                        <div class="feature-card from-right delay-3">
+                            <div class="feature-header">
+                                <i class="fa-solid fa-bolt"></i>
+                                <h3>Performance Focused</h3>
+                            </div>
+                            <p>
+                                Writing optimized code for fast loading speeds, smooth animations and better performance.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+
+                        <div class="feature-card from-right delay-4">
+                            <div class="feature-header">
+                                <i class="ph ph-target"></i>
+                                <h3>Problem Solver</h3>
+                            </div>
+                            <p>
+                                Turning ideas into real-world solutions through creative thinking and clean development.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+                        <h3>1 Year+</h3>
+                        <p>Coding</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>5+</h3>
+                        <p>Project Built</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>100%</h3>
+                        <p>Responsive Design</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>⚡</h3>
+                        <p>Fast Learner</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-title">
+                    
+                    <span class="about-section-tag">
+                        About Me
+                    </span>
+
+                    <h2 class="description"><span>Who I am &</span> What I Do</h2>
+                    
+                    <div class="title-line">
+                        <span class="blue">────────</span>
+                        <span class="dot">●</span>
+                        <span class="red">────────</span>
+                    </div>
+
+                </div>
+
+                <!-- About Content -->
+                <div class="row">
+                    <div class="col-lg-5">
+
+                        <div class="about-content">
+                            <h3 class="about-heading">Passionate 
+                                <span id="about-role">Frontend Developer</span> & <br>
+                                <span id="f-role">Future Software Engineer</span>
+                            </h3>
+                        </div>
+
+                        <p class="about-text">I am a passionate Frontend Web Developer and a BCA second-year student who enjoys building clean, responsive, and user-friendly websites. I love transforming ideas into modern web experiences using HTML, CSS, JavaScript, Bootstrap, and Git.</p>
+
+                        <p class="about-text">Alongside frontend development, I am actively exploring backend development with Python and Django, while also learning database management to build complete full-stack applications. My goal is to become a skilled Software Engineer who creates scalable, high-performance, and meaningful digital solutions.</p>
+
+                        <p class="about-text">I believe in continuous learning, writing clean code, and improving my skills through real-world projects and hands-on practice.</p>
+                    </div>
+
+                    <div class="col-lg-7">
+                        
+                        <div class="focus-title">
+                            <h4>WHAT I'M FOCUSED ON</h4>
+                        </div>
+
+                        <div class="row g-4">
+
+                            <div class="col-md-6">
+                                <div class="focus-card">
+                                    <i class="fa-solid fa-code"></i>
+                                    <h5>Frontend Development</h5>
+                                    <p>Building responsive and interactive user interfaces with modern technologies.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="focus-card">
+                                    <i class="fa-solid fa-server"></i>
+                                    <h5>Backend Development</h5>
+                                    <p>Exploring server-side development with Python and Django.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="focus-card">
+                                    <i class="fa-solid fa-database"></i>
+                                    <h5>Database Learning</h5>
+                                    <p>Learning database concepts and working with real-world database systems.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="focus-card">
+                                    <i class="fa-solid fa-laptop-code"></i>
+                                    <h5>Software Engineering</h5>
+                                    <p>Aspiring to build scalable, efficient, and impactful software solutions.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="focus-card">
+                                    <i class="fa-solid fa-lightbulb"></i>
+                                    <h5>Problem Solving</h5>
+                                    <p>I enjoy solving problems and turning ideas into real-world solutions.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="focus-card">
+                                    <i class="fa-solid fa-chart-line"></i>
+                                    <h5>Continuous Growth</h5>
+                                    <p>Always learning, improving skills, and staying updated with new technologies.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row g-4 about-stats">
+                    <div class="col-6 col-lg-3">
+                        <div class="about-card">
+                            <i class="fa-solid fa-code"></i>
+                            <h5 id="frontend">Frontend</h5>
+                            <p>My Strength</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-3">
+                        <div class="about-card">
+                            <i class="fa-solid fa-server"></i>
+                            <h5 id="backend">Backend</h5>
+                            <p>In Progress</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-3">
+                        <div class="about-card">
+                            <i class="fa-solid fa-database"></i>
+                            <h5 id="database">Databases</h5>
+                            <p>Learning</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-3">
+                        <div class="about-card">
+                            <i class="fa-solid fa-bullseye"></i>
+                            <h5 id="goal">Goal</h5>
+                            <p>SDE</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-title">
+
+                    <span class="section-tag">
+                        /// MY EXPERTISE ///
+                    </span>
+
+                    <h2 class="skill-heading">
+                        Skills
+                    </h2>
+
+                    <div class="title-line">
+                        <span class="blue">────────</span>
+                        <span class="dot">●</span>
+                        <span class="red">────────</span>
+                    </div>
+
+                     <p class="skill-para">
+                        Technologies I use to build modern,<br> responsive and high-performance web applications.
+                    </p>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="skill-box">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                            <h3 class="skill-name">HTML</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="skill-box">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                            <h3 class="skill-name">CSS</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="skill-box">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                            <h3 class="skill-name">JAVASCRIPT</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="skill-box">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
+                            <h3 class="skill-name">BOOTSTRAP</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="skill-box">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+                            <h3 class="skill-name">GIT</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="skill-box">
+                            <img src="https://cdn.simpleicons.org/github/white" alt="GitHub">
+                            <h3 class="skill-name">GITHUB</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="skill-box">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+                            <h3 class="skill-name">PYTHON</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="skill-box">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" />
+                            <h3 class="skill-name">DJANGO</h3>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Section -->
         
+        <section id="projects" class="projects">
 
+            <div class="container">
 
+                <!-- Section Heading -->
+                <div class="section-title">
 
+                    <span class="section-tag">
+                        <i class="fa-solid fa-code"></i>
+                        MY WORK
+                    </span>
 
+                    <h2 class="section-heading">
+                        My <span>Projects</span>
+                    </h2>
+
+                    <p class="section-description">
+                        Here are some of the projects I've built during my learning journey.
+                        Each project helped me improve my frontend development skills.
+                    </p>
+
+                </div>
+
+                <!-- project 1 -->
+
+                <div class="project-card">
+
+                    <div class="project-left">
+
+                        <div class="project-number">
+                            01
+                        </div>
+
+                        <div class="project-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="project-content">
+                        <h3>Amazon Landing Page</h3>
+                        <p>
+                            A responsive Amazon landing page clone built using HTML and CSS.
+                            It includes a modern navigation bar, hero section,
+                            shopping categories, product cards and footer.
+                        </p>
+                        <a href="#" class="view-project">
+                            View Project
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="project-right">
+                        <h5>
+                            <i class="fa-solid fa-code"></i>
+                            Technologies Used
+                        </h5>
+                        <div class="tech-stack">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="github-btn">
+                                <i class="fa-brands fa-github"></i>
+                                GitHub
+                            </a>
+
+                            <a href="#" class="live-btn">
+                                <i class="fa-solid fa-eye"></i>
+                                Live Demo
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- project 2 -->
+                <div class="project-card">
+
+                    <div class="project-left">
+                        <div class="project-number">
+                            02
+                        </div>
+                        <div class="project-icon">
+                            <i class="fa-solid fa-calculator"></i>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <h3>Calculator</h3>
+                        <p>
+                            A fully functional calculator developed using HTML,
+                            CSS and JavaScript.
+                            It performs all basic arithmetic operations with a clean UI.
+                        </p>
+                        <a href="#" class="view-project">
+                            View Project
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="project-right">
+                        <h5>
+                            <i class="fa-solid fa-code"></i>
+                            Technologies Used
+                        </h5>
+                        <div class="tech-stack">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <div class="project-buttons">
+                            <a href="#" class="github-btn">
+                                <i class="fa-brands fa-github"></i>
+                                GitHub
+                            </a>
+                            <a href="#" class="live-btn">
+                                <i class="fa-solid fa-eye"></i>
+                                Live Demo
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+
+                    <div class="project-left">
+                        <div class="project-number">
+                            03
+                        </div>
+                        <div class="project-icon">
+                            <i class="fa-solid fa-hand-rock"></i>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <h3>Rock Paper Scissors Game</h3>
+                        <p>
+                            An interactive Rock-Paper-Scissors game built using
+                            HTML, CSS and JavaScript.
+                            Users play against the computer with real-time score updates.
+                        </p>
+                        <a href="#" class="view-project">
+                            View Project
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="project-right">
+                        <h5>
+                            <i class="fa-solid fa-code"></i>
+                            Technologies Used
+                        </h5>
+                        <div class="tech-stack">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <div class="project-buttons">
+                            <a href="#" class="github-btn">
+                                <i class="fa-brands fa-github"></i>
+                                GitHub
+                            </a>
+                            <a href="#" class="live-btn">
+                                <i class="fa-solid fa-eye"></i>
+                                Live Demo
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Contact ME -->
+
+        <section id="contact" class="contact">
+
+            <div class="container">
+
+                <!-- Section Heading -->
+                <div class="contact-title">
+
+                    <span class="contact-tag">
+                        ● CONTACT
+                    </span>
+
+                    <h2 class="contact-heading">
+                        Contact <span>Me</span>
+                    </h2>
+
+                    <div class="contact-line"></div>
+
+                    <p class="contact-description">
+                        I'm always open to discussing new projects,
+                        creative ideas or opportunities to be part of
+                        your visions.
+                    </p>
+
+                    <h4 class="connect-text">
+                        Let's connect!
+                    </h4>
+
+                </div>
+
+                <div class="row g-4 align-items-stretch mt-5">
+
+                    <div class="col-12 col-lg-5">
+                        <div class="row g-4">
+                            <!-- Location -->
+                            <div class="col-md-6">
+                                <div class="contact-card">
+                                    <div class="contact-icon blue">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <h4>Location</h4>
+                                    <div class="small-line"></div>
+                                    <p>Vadodara, Gujarat</p>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+
+                            <div class="col-md-6">
+                                <div class="contact-card">
+                                    <div class="contact-icon red">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <h4>Email</h4>
+                                    <div class="small-line"></div>
+                                    <a href="mailto:dhruvdanani10@gmail.com">
+                                        dhruvdanani10@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Github -->
+
+                            <div class="col-md-6">
+                                <div class="contact-card">
+                                    <div class="contact-icon blue">
+                                        <i class="fa-brands fa-github"></i>
+                                    </div>
+                                    <h4>GitHub</h4>
+                                    <div class="small-line"></div>
+                                    <a href="https://github.com/Dhruv-1810" target="_blank">
+                                        Dhruv-1810
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <!-- LinkedIn -->
+
+                            <div class="col-md-6">
+
+                                <div class="contact-card">
+                                    <div class="contact-icon blue">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </div>
+                                    <h4>LinkedIn</h4>
+                                    <div class="small-line"></div>
+                                    <a href="https://www.linkedin.com/in/dhruv-danani/" target="_blank">
+                                        Dhruv Danani
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-lg-7">
+
+                        <div class="contact-form">
+
+                            <div class="form-heading">
+                                <div class="form-icon">
+                                    <i class="fa-regular fa-paper-plane"></i>
+                                </div>
+                                <div>
+                                    <h3>
+                                        Send Me a <span>Message</span>
+                                    </h3>
+                                    <div class="small-line"></div>
+                                </div>
+                            </div>
+
+                            <form>
+
+                                <div class="row g-4">
+
+                                    <div class="col-md-6">
+
+                                        <div class="input-box">
+
+                                            <i class="fa-regular fa-user"></i>
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                placeholder="Your Name">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-6">
+
+                                        <div class="input-box">
+                                            <i class="fa-regular fa-envelope"></i>
+                                            <input
+                                                type="email"
+                                                class="form-control"
+                                                placeholder="Your Email">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-12">
+
+                                        <div class="input-box">
+                                            <i class="fa-regular fa-rectangle-list"></i>
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                placeholder="Subject">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="input-box textarea-box">
+                                            <i class="fa-solid fa-pencil"></i>
+                                            <textarea
+                                                class="form-control"
+                                                rows="8"
+                                                placeholder="Your Message">
+                                            </textarea>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-12">
+
+                                        <button class="send-btn">
+                                            <i class="fa-regular fa-paper-plane"></i>
+                                            Send Message
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <p class="thanks-msg">THANKS FOR VISITING!</p>
+        <p class="quote">
+            "The code you write today may not be perfect, but every line brings you closer to the developer you're becoming. Keep building. Keep learning. Never stop."
+        </p>
+    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
     </body>
 </html>
